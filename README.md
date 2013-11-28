@@ -1,3 +1,3 @@
-# Example of an OAuth Provider in Play Scala
+# Example OAuth Provider in Play Scala
 
 
