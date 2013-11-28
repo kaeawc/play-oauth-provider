@@ -1,7 +1,9 @@
-@(message: String)
+@(user:Option[User] = None)
 
-@main("Welcome to Play") {
+@main(user) {
 
-    @play20.welcome(message)
+    <h2>This is an example of an OAuth Provider</h2>
+
+    <div>See also my <a href="@Messages("href.github.consumer")">Play OAuth Consumer Example</a>.</div>
 
 }
