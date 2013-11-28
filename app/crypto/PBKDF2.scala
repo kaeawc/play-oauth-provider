@@ -8,8 +8,9 @@ import javax.crypto.spec._
 
 object PBKDF2
 extends SlowEquals
-with Salt
-with Hexadecimal {
+with Salt {
+
+  import Hexadecimal._
 
   val algorithm        = "PBKDF2WithHmacSHA1"
 
