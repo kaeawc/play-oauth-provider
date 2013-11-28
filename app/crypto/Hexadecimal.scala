@@ -1,6 +1,6 @@
 package crypto
 
-trait Hexadecimal {
+object Hexadecimal {
 
   implicit def hex2bytes(hex: String): Array[Byte] = {
     hex.replaceAll("[^0-9A-Fa-f]", "").sliding(2, 2).toArray.map(Integer.parseInt(_, 16).toByte)
