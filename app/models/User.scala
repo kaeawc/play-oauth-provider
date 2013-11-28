@@ -25,6 +25,8 @@ object User extends ((
 ) => User)
 with CRUD[User] {
 
+  import crypto.Hexadecimal._
+
   implicit val jsonFormat = Json.format[User]
 
   def getById(id:Long) = ???
