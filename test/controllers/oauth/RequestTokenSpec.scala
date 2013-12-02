@@ -1,4 +1,4 @@
-package test.oauth
+package controllers.oauth
 
 import test._
 import play.api.test._
